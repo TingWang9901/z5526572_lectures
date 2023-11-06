@@ -45,18 +45,18 @@ print(ser)
 # Select Qantas price on '2020-01-02' ($7.16) using ...
 
 # ... the `prices` list
-prc0=ser.index('2020-01-02')
+prc0= ser.index('2020-01-02')
 print(prc0)
 
 # ... the `ser` series
-#prc1  = '?'
+#prc1  = ser['2020-01-02']
 #print(prc1)                     
 
 # ---------------------------------------------------------------------------- 
 #   Slicing series
 # ---------------------------------------------------------------------------- 
 # Unlike dictionaries, you can slice a series
-#prcs  = '?'
+#prcs  = ser['2020-01-06':'2020-01-10']
 #print(prcs) 
 
 # ---------------------------------------------------------------------------- 
@@ -64,7 +64,7 @@ print(prc0)
 # ---------------------------------------------------------------------------- 
 
 # Use `.array` to get the underlying data array
-ary  = '?'
+ary  = ser.array
 #print(ary)  
 
 # Like any instance, you can get its type (i.e., the class used to create the
@@ -72,7 +72,7 @@ ary  = '?'
 #print(type(ser.array)) 
 
 # Use the `index` attribute to get the index from a series
-the_index  = '?'
+the_index  = ser.index
 #print(the_index) 
 
 # Like any instance, you can get its type (i.e., the class used to create the
@@ -105,7 +105,7 @@ the_index  = '?'
 #print(ser) 
 
 # This will return 7.04
-x  = '?'
+x  = ser[1000]
 #print(x) 
 
 # Compare the following cases:
